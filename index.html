@@ -28,6 +28,54 @@
 				alert("Senha incorreta!");
 			}
 		}
+    function showGaraele1Text() {
+			var password = document.getElementById("garaele1-password").value;
+			if (password == "1494") {
+				document.getElementById("garaele1-text").innerHTML = "Missão que a Garaele dará ao grupo.";
+			} else {
+				alert("Senha incorreta!");
+			}
+		}
+    function showGaraele2Text() {
+			var password = document.getElementById("garaele2-password").value;
+			if (password == "8977") {
+				document.getElementById("garaele2-text").innerHTML = "O que Garaele sabe e disse ao grupo.";
+			} else {
+				alert("Senha incorreta!");
+			}
+		}
+      function showHarbin1Text() {
+			var password = document.getElementById("harbin1-password").value;
+			if (password == "8146") {
+				document.getElementById("harbin1-text").innerHTML = "Missão que Harbin passará ao grupo.";
+			} else {
+				alert("Senha incorreta!");
+			}
+		}
+      function showHarbin2Text() {
+			var password = document.getElementById("harbin2-password").value;
+			if (password == "7926") {
+				document.getElementById("harbin2-text").innerHTML = "O que Harbin sabe e disse ao grupo.";
+			} else {
+				alert("Senha incorreta!");
+			}
+		}
+       function showQueline1Text() {
+			var password = document.getElementById("queline1-password").value;
+			if (password == "5441") {
+				document.getElementById("queline1-text").innerHTML = "Missão que Queline passará ao grupo.";
+			} else {
+				alert("Senha incorreta!");
+			}
+		}
+     function showQueline2Text() {
+			var password = document.getElementById("queline2-password").value;
+			if (password == "4955") {
+				document.getElementById("queline2-text").innerHTML = "O que Queline sabe e disse ao grupo.";
+			} else {
+				alert("Senha incorreta!");
+			}
+		}
 	</script>
 </head>
 <body>
@@ -43,7 +91,7 @@
 		</tr>
 		<tr>
 			<th>Foto</th>
-			<td><img src="https://github.com/TeacherBrunoBrasil/teacherbruno.io/blob/main/Tokens/1.jpg" alt="Elmar Barthen" width="90" height="90"></td>
+			<td><img src="Tokens/1.jpg" alt="Elmar Barthen" width="90" height="90"></td>
 			<td><img src="Tokens/4.jpg" alt="Hardin Wester" width="90" height="90"></td>
 			<td><img src="Tokens/2.jpg" alt="Irmã Garaele" width="90" height="90"></td>
 			<td><img src="Tokens/3.jpg" alt="Quelliine" width="90" height="90"></td>
@@ -55,9 +103,21 @@
 				<button onclick="showBarthenText()">Mostrar</button>
 				<p id="barthen-text"></p>
 			</td>
-			<td></td>
-			<td></td>
-			<td></td>
+			<td>
+			  <input type="password" id="harbin1-password" size="5">
+				<button onclick="showHarbin1Text()">Mostrar</button>
+				<p id="harbin1-text"></p>
+			</td>
+			<td>
+        <input type="password" id="garaele1-password" size="5">
+				<button onclick="showGaraele1Text()">Mostrar</button>
+				<p id="garaele1-text"></p>
+				  </td>
+			<td>
+			  <input type="password" id="queline1-password" size="5">
+				<button onclick="showQueline1Text()">Mostrar</button>
+				<p id="queline1-text"></p>
+			</td>
 		</tr>
 		<tr>
 			<th>O que sabe</th>
@@ -66,9 +126,21 @@
 				<button onclick="showBusinessText()">Mostrar</button>
 				<p id="business-text"></p>
 			</td>
-			<td></td>
-			<td></td>
-			<td></td>
+			<td>
+			   <input type="password" id="harbin2-password" size="5">
+				<button onclick="showHarbin2Text()">Mostrar</button>
+				<p id="harbin2-text"></p>
+			</td>
+			<td>
+			  <input type="password" id="garaele2-password" size="5">
+				<button onclick="showGaraele2Text()">Mostrar</button>
+				<p id="garaele2-text"></p>
+			</td>
+			<td>
+			  <input type="password" id="queline2-password" size="5">
+				<button onclick="showQueline2Text()">Mostrar</button>
+				<p id="queline2-text"></p>
+			</td>
 		</tr>
 		<tr>
 			<th>Localização</th>

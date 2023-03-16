@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Missões e Personagens de Phandalin</title>
+  	<style>
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+			padding: 5px;
+		}
+	</style>
+	<script>
+		function showBarthenText() {
+			var password = document.getElementById("barthen-password").value;
+			if (password == "2747") {
+				document.getElementById("barthen-text").innerHTML = "Ele paga o combinado (10 po a cada) e fica com a carroça e o conteúdo. Ao contar que Gundren foi capturado, Barthen fica triste pela noticia e encoraja o grupo a encontrar e resgatá-lo. Ele considera Gundren um amigo e estava animado pela conversa da descoberta da mina perdida do Pacto de Phandelver nas colinas próximas.";
+			} else {
+				alert("Senha incorreta!");
+			}
+		}
+
+		function showBusinessText() {
+			var password = document.getElementById("business-password").value;
+			if (password == "0575") {
+				document.getElementById("business-text").innerHTML = "Se perguntarem a Barthen como os negocio esta indo, o comerciante vai dizer que os Marcarrubra estão difi cultando a vida de todo mundo, saqueando o comércio local e zombando com a autoridade do chefe da vila. Se mencionarem a fazer algo sobre isso ele conta que os Marcarrubra frequentam a taverna Gigante Adormecido.";
+			} else {
+				alert("Senha incorreta!");
+			}
+		}
+	</script>
+</head>
+<body>
+	<h1>Missões e Personagens de Phandalin</h1>
+
+	<table>
+		<tr>
+			<th>Nome</th>
+			<td>Elmar Barthen</td>
+			<td>Harbin Wester</td>
+			<td>Irmã Garaele</td>
+			<td>Quelline</td>
+		</tr>
+		<tr>
+			<th>Foto</th>
+			<td><img src="https://lh3.googleusercontent.com/IZYYLB1ml0blzi042vHG0E8-7UHRs2SbjiGP6Zbtw1BImqST8UszeWx17fXXj1uRhDQJ5Kx1AxSpquYMtqIKq_E=w1280" alt="Elmar Barthen" width="90" height="90"></td>
+			<td><img src="https://lh6.googleusercontent.com/0xhQs322GMjKloU_RIiHVfj6nAfsSw6M0euzcy6RYXdzX1z5oPO30vojuEuU95qvxLFEfMrkNR0ouHz8whJTnzU=w1280" alt="Hardin Wester" width="90" height="90"></td>
+			<td><img src="https://lh3.googleusercontent.com/Ebx3Rao7C--hhEYAdWj-1V1VNVsigYNDjfOV6NQO18IOl44GQQ7AldBVQzmR3sGzPHNr-OcZ9uYlgqgn2G1sI7c=w1280" alt="Irmã Garaele" width="90" height="90"></td>
+			<td><img src="https://lh4.googleusercontent.com/vgSplU-6T4kQpTGwd9Wf3xpUn5WP-sHM11nwFgqVToEAR-AeXGRo0tDuiVnBWsq3ouiC0K79ZQnmzVsLBw1GYf8=w1280" alt="Quelliine" width="90" height="90"></td>
+		</tr>
+		<tr>
+			<th>Missão</th>
+			<td>
+				<input type="password" id="barthen-password" size="5">
+				<button onclick="showBarthenText()">Mostrar</button>
+				<p id="barthen-text"></p>
+			</td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>O que sabe</th>
+			<td>
+				<input type="password" id="business-password" size="5">
+				<button onclick="showBusinessText()">Mostrar</button>
+				<p id="business-text"></p>
+			</td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>Localização</th>
+			<td>Barthen Provisões</td>
+			<td>Prefeitura</td>
+			<td>Santuário da Sorte</td>
+			<td>Fazenda Alderleaf</td>
+		</tr>
+	</table>
+</body>
+</html>
